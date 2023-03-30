@@ -1,0 +1,190 @@
+import os
+import time
+#Juan Felipe Guancha Duran - 202159950
+
+#Fisica I
+
+
+#___________________convertidor de medidas___________________________
+time.sleep(1)
+os.system("cls")
+
+print("\nConversor De Medidas\n ")
+
+a = int(input("Ingrese el numero a convertir: \n"))
+
+
+menuPrincipal = int(input( "\nelegir la medida inicial: \n\n 1-Kilometro \n 2-Hectometro \n 3-Decametro \n 4-Metro \n 5-decimetro \n 6-centimetro \n 7-milimetro \n 0-salir \n "))
+menuSecundario = int(input( " \n \n Elegir medida a convertir: \n\n 1-Kilometro \n 2-Hectometro \n 3-Decametro \n 4-Metro \n 5-decimetro \n 6-centimetro \n 7-milimetro\n"))
+while menuPrincipal != 0:
+    match menuPrincipal:
+        case 1:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:               
+                 print(a,"Km -> Km = ", a*1 , " Km")
+                 break
+                case 2:
+                 print(a,"Km -> Hm = ", a*10 , " Hm")
+                 break
+                case 3:
+                 print(a,"Km -> Dm = ", a*100 , " Dm")
+                 break
+                case 4:
+                 print(a,"Km -> M = ", a*1000 , " M")
+                 break
+                case 5:
+                 print(a,"Km -> dm = ", a*10000 , " dm")
+                 break
+                case 6:
+                  print(a,"Km -> cm = ", a*100000 , " cm")
+                  break
+                case 7:
+                  print(a,"Km -> mm = ", a*1000000 , " mm")
+                  break
+               
+        case 2:
+            print(menuSecundario)
+            match menuSecundario:
+               case 1:
+                 print(a,"Hm -> Km = ", a/10 , " Km")
+                 break
+               case 2:
+                  print(a,"Hm -> Hm = ", a*1 , " Hm")
+                  break
+               case 3:
+                  print(a,"Hm -> Dm = ", a*10 , " Dm")
+                  break
+               case 4:
+                  print(a,"Hm -> M = ", a*100 , " M")
+                  break
+               case 5:
+                  print(a,"Hm -> dm = ", a*1000 , " dm")
+                  break
+               case 6:
+                  print(a,"Hm -> cm = ", a*10000 , " cm")
+                  break
+               case 7:
+                  print(a,"Hm -> mm = ", a*100000 , " mm")
+                  break
+        case 3:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:
+                  print(a,"Dm -> Km = ", a/100 , " Dm")
+                  break
+                case 2:
+                  print(a,"Dm -> Hm = ", a/10 , " Hm")
+                  break
+                case 3:
+                  print(a,"Dm -> Dm = ", a*1 , " Dm")
+                  break
+                case 4:
+                  print(a,"Dm -> M = ", a*10 , " M")
+                  break
+                case 5: 
+                  print(a,"Dm -> dm = ", a*100 , " dm")
+                  break
+                case 6:
+                  print(a,"Dm -> cm = ", a*1000 , " cm")
+                  break
+                case 7:
+                  print(a,"Dm -> mm = ", a*10000 , " mm")
+                  break
+               
+        case 4:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:
+                  print(a,"M -> Km = ", a/1000 , " Km")
+                  break
+                case 2:
+                  print(a,"M -> Hm = ", a/100 , " Hm")
+                  break
+                case 3:
+                  print(a,"M -> Dm = ", a/10 , " Dm")
+                  break
+                case 4:
+                  print(a,"M -> M = ", a*1 , " M")
+                  break
+                case 5:
+                  print(a,"M -> dm = ", a*10 , " dm")
+                  break
+                case 6:
+                  print(a,"M -> cm = ", a*100 , " cm")
+                  break
+                case 7:
+                  print(a,"M -> mm = ", a*1000 , " mm")
+                  break
+        case 5:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:
+                   print(a,"dm -> Km = ", a/10000 , " Km")
+                   break
+                case 2:
+                   print(a,"dm -> Hm = ", a/1000 , " Hm")
+                   break
+                case 3:
+                   print(a,"dm -> Dm = ", a/100 , " Dm")
+                   break
+                case 4:
+                   print(a,"dm -> M = ", a/10 , " M")
+                   break
+                case 5:
+                   print(a,"dm -> dm = ", a*1 , " dm")
+                   break
+                case 6:
+                   print(a,"dm -> cm = ", a*10 , " cm")
+                   break
+                case 7:
+                  print(a,"dm -> mm = ", a*100 , " mm")
+                  break
+        case 6:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:
+                  print(a,"cm -> Km = ", a/100000 , " Km")
+                  break
+                case 2:
+                  print(a,"cm -> Hm = ", a/10000 , " Hm")
+                  break
+                case 3:
+                  print(a,"cm -> Dm = ", a/1000 , " Dm")
+                  break
+                case 4: 
+                  print(a,"cm -> M = ", a/100 , " M")
+                  break
+                case 5:
+                  print(a,"cm -> dm = ", a/10 , " dm")
+                  break
+                case 6:
+                  print(a,"cm -> cm = ", a*1 , " cm")
+                  break
+                case 7:
+                  print(a,"cm -> mm = ", a*10 , " mm")
+                  break
+        case 7:
+            print(menuSecundario)
+            match menuSecundario:
+                case 1:
+                  print(a,"mm -> Km = ", a/1000000 , " Km")
+                  break
+                case 2:
+                  print(a,"mm -> Hm = ", a/100000 , " Hm")
+                  break
+                case 3:
+                  print(a,"mm -> Dm = ", a/10000 , " Dm")
+                  break
+                case 4: 
+                  print(a,"mm -> M = ", a/1000 , " M")
+                  break
+                case 5:
+                  print(a,"mm -> dm = ", a/100 , " dm")
+                  break
+                case 6:
+                  print(a,"mm -> cm = ", a/10 , " cm")
+                  break
+                case 7:
+                  print(a,"mm -> mm = ", a*1 , " Km")
+                  break                           
